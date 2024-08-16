@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+## Multilingual Sentiment Analysis Application (Front-End)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the front-end for a Multilingual Sentiment Analysis application, built with React JS. The interface is inspired by Gemini's design.
 
-## Available Scripts
+### Overview
 
-In the project directory, you can run:
+This front-end provides a user-friendly interface for interacting with a sentiment analysis model. While currently configured to use the Gemini model for demonstration purposes, a dedicated multilingual sentiment analysis model is used in production. This model is capable of accurately determining the sentiment of text in Marathi & Hindi language.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* **Gemini-inspired Interface:** Familiar and intuitive user experience.
+* **Multilingual Support:** Analyze sentiment in various languages (production).
+* **Sentiment Classification:** Classifies text as Positive, Negative, or Neutral.
+* **Session Management:** Create new sessions and review past interactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Development
 
-### `npm test`
+The front-end is set up using Create React App, providing a streamlined development environment. Key technologies used include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React JS: JavaScript library for building user interfaces.
+* React Router DOM: For handling navigation and routing.
+* Axios: Promise-based HTTP client for making API requests.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/AmaanDhamaskar/Gemini-FrontEnd-Sentiment.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In production, the application utilizes a dedicated multilingual sentiment analysis model. This model is not included in this repository for security and intellectual property reasons. To deploy to production, you would need to connect this front-end to your production-ready sentiment analysis API.
 
-## Learn More
+### Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* This front-end is primarily for demonstration and development purposes.
+* The Gemini model is used for development and demonstration, NOT in production.
+* The actual production sentiment analysis model and its API are not provided here.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Future Enhancements
 
-### Code Splitting
+* Enhanced UI: Improve user experience with features like response highlighting.
+* More Models: Integrate additional sentiment analysis models for comparison.
+* User Authentication: Secure access and allow users to save their sessions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### License
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.

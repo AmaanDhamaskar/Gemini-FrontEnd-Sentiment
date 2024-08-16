@@ -1,0 +1,189 @@
+.login{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background-color: #131314;
+}
+.login .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    /* color: #c4c7c5; */
+    color: white;
+}
+.login .nav img{
+    width: 40px;
+    border-radius: 50px;
+}
+.login-container{
+    max-width: 900px;
+    margin: auto;
+    color: white;
+}
+.login-container .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color:white;
+    font-weight: 00px;
+}
+.login .greet span{
+    /* background: -webkit-linear-gradient(40deg,#4b90ff,#ff5546); */
+    background: -webkit-linear-gradient(40deg,#5C27FE,#C165DD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+.login .cards{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,minmax(180px,1fr)); */
+    gap: 15px;
+}
+.login .card{
+    padding: 10px 15px;
+    margin-top: 0px;
+    background-color: #1e1f20;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+}
+
+.login .card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 5px
+}
+
+
+.login .card p{
+    color: #c4c7c5;
+    font-size: 24px;
+}
+
+.login label {
+    font-size: 24px;
+}
+
+.login input{
+    flex: 1;
+    background: transparent;
+    border: 2;
+    border-color: white;
+    outline: 0;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+}
+
+.login button{
+    /* background-color: #1e1f20; */
+    background: -webkit-linear-gradient(40deg,#5C27FE,#C165DD);
+    height: 50px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.login-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px 20px;
+    margin: auto;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #1e1f20;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 8px;
+    font-size: 18px;
+    color: white;
+}
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.login .bottom-info{
+    font-size: 13px;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+}
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    color: white;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.result img{
+    width: 40px;
+    border-radius: 50px;
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loader hr{
+border-radius: 4px;
+border: none;
+background-color: #f6f7f8;
+background: linear-gradient(to right,#5C27FE,#C165DD);
+background-size: 800px 50px;
+height: 20px;
+animation: loader 4s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300px;
+    line-height: 1.8;
+}
